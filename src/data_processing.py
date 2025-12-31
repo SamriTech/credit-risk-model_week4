@@ -5,7 +5,7 @@ from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 from sklearn.cluster import KMeans  # Added missing import
-from xverse.transformer import WOE
+#from xverse.transformer import WOE
 
 # --- TASK 3 FUNCTIONS ---
 

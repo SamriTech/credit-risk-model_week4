@@ -1,0 +1,22 @@
+artifact_path: file:C:/Users/hp/Documents/GitHub/credit-risk-model_week4/mlruns/3/models/m-af4e3c20606b4b8492c1359dddf949c3/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.3
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+mlflow_version: 3.8.1
+model_id: m-af4e3c20606b4b8492c1359dddf949c3
+model_size_bytes: 260340
+model_uuid: m-af4e3c20606b4b8492c1359dddf949c3
+prompts: null
+run_id: 5df421537d064b1b8fe0a7c6b242a037
+utc_time_created: '2025-12-31 05:28:58.600527'
