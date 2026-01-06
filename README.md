@@ -3,7 +3,7 @@
 ## Business Context
 Banks must assess the likelihood that a customer will default on a loan. 
 In this project, we build a credit risk probability model using alternative transaction data, 
-aligned with Basel II regulatory principles.
+aligned with Basel II regulatory principles .
 
 ## Objective
 - Predict customer credit risk using transactional behavior
