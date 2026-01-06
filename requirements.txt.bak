@@ -1,0 +1,11 @@
+mlflow
+pytest
+xgboost
+scikit-learn
+
+fastapi
+uvicorn
+mlflow
+pandas
+pydantic
+flake8   # or black

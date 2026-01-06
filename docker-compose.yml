@@ -1,0 +1,16 @@
+services:
+  credit-risk-api:
+    build: .
+    container_name: credit-risk-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+      - ./mlflow_data:/app/mlflow_data                     # tracking DB folder (contains mlflow.db)
+      - ./mlruns:/app/mlruns                               # MLflow artifacts
+
+    environment:
+      - PYTHONPATH=/app
+      - MLFLOW_TRACKING_URI=sqlite:////app/mlflow_data/mlflow.db
+    working_dir: /app
+    command: uvicorn src.api.main:app --host 0.0.0.0 --port 8000 --reload
