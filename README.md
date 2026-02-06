@@ -19,3 +19,11 @@ when transparency and accountability are critical.
 The dataset does not include a direct "default" label.
 To overcome this, we engineer a proxy target variable using customer transaction behavior
 through Recency, Frequency, and Monetary (RFM) analysis.
+
+## Methodology
+1. **Exploratory Data Analysis (EDA):** Analyze distributions, correlations, and outliers.  
+2. **Feature Engineering:** Aggregate transaction metrics, extract time-based features, encode categorical variables, normalize data, and apply WoE transformations.  
+3. **Proxy Target Creation:** Cluster customers with RFM metrics to define `is_high_risk`.  
+4. **Model Training:** Train models including Logistic Regression, Decision Tree, Random Forest, and Gradient Boosting; tune hyperparameters; track experiments with MLflow.  
+5. **Deployment:** Build a FastAPI API for predictions, containerize with Docker, and automate testing with CI/CD pipelines.
+
